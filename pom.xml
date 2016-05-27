@@ -18,5 +18,11 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
+        <!-- http://mvnrepository.com/artifact/joda-time/joda-time -->
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.9</version>
+        </dependency>
     </dependencies>
 </project>
