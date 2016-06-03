@@ -22,10 +22,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="effective" />
         <module name="reflect" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="effective" target="1.5" />
       <module name="reflect" target="1.5" />
       <module name="ymPrac" target="1.5" />
     </bytecodeTargetLevel>

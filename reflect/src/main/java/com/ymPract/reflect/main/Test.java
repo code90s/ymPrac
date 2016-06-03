@@ -45,5 +45,10 @@ public class Test {
         System.out.println(((Demo) o).getName());
     }
 
+    @org.junit.Test
+    public void testClassLoader() {
+        System.out.println(Demo.class.getClassLoader().getClass().getName());
+    }
+
 
 }
