@@ -1,0 +1,32 @@
+server:
+  port: 8888
+
+db:
+  host: 172.30.13.76
+  port: 3306
+  name: commerce_platform
+  user: test
+  pwd: 123456
+
+redis:
+  host: 172.30.13.76
+  port: 6379
+  databaseNum: 2
+
+cas:
+  baseLmallDomain: http://lmall.offline.lianjia.com:8971
+  serverCasUrl: http://passport.off.lianjia.com/cas
+  clientCasUrl: http://lmall.offline.lianjia.com:8971/cas
+  filterLoginUrl: http://passport.off.lianjia.com/cas/login?service=http://lmall.offline.lianjia.com:8971/cas
+  logoutUrl: http://passport.off.lianjia.com/cas/logout
+  indexUrl: http://lmall.offline.lianjia.com:8971/static/
+
+user:
+    baseUrl: http://172.16.3.147:5100/
+
+pay:
+  lcoinWithholdPayUrl: http://172.30.0.20:8060/api/payment/lcoin/withhold
+  withholdRefundUrl: http://172.30.0.20:8060/api/refund
+  cashierPayUrl: http://172.30.0.20:8060/cashier/pay
+  redirectUrl: http://172.30.0.20:8070/static/index.html#order
+  callbackUrl: http://172.30.0.20:8070/api/order/pay/callback

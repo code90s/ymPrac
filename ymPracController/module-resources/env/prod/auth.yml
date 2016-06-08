@@ -1,0 +1,14 @@
+#权限设置
+shiro:
+    loginUrl: http://passport.lianjia.com/cas/login?service=http://lmall.lianjia.com/cas
+    successUrl: http://lmall.lianjia.com/login_callback
+    faildUrl: http://lmall.lianjia.com/loginFailed
+    urlMappings:
+        - /js/* anon
+        - /static/* anon
+        - /css/* anon
+        - /login anon
+        - /logout logout
+        - /loginFailed anon
+        - /cas ssoLogout,cas
+        - /authc/** anon

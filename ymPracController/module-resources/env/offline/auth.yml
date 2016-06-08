@@ -1,0 +1,14 @@
+#权限设置
+shiro:
+    loginUrl: http://passport.off.lianjia.com/cas/login?service=http://offlinelmall.lianjia.com:8971/cas
+    successUrl: http://offlinelmall.lianjia.com:8971/login_callback
+    faildUrl: http://offlinelmall.lianjia.com:8971/loginFailed
+    urlMappings:
+        - /js/* anon
+        - /static/* anon
+        - /css/* anon
+        - /login anon
+        - /logout logout
+        - /loginFailed anon
+        - /cas ssoLogout,cas
+        - /authc/** anon
