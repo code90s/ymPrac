@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/effective/effective.iml" filepath="$PROJECT_DIR$/effective/effective.iml" />
       <module fileurl="file://$PROJECT_DIR$/reflect/reflect.iml" filepath="$PROJECT_DIR$/reflect/reflect.iml" />
       <module fileurl="file://$PROJECT_DIR$/ymPrac.iml" filepath="$PROJECT_DIR$/ymPrac.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ymPracBiz/ymPracBiz.iml" filepath="$PROJECT_DIR$/ymPracBiz/ymPracBiz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ymPracController/ymPracController.iml" filepath="$PROJECT_DIR$/ymPracController/ymPracController.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ymPracService/ymPracService.iml" filepath="$PROJECT_DIR$/ymPracService/ymPracService.iml" />
     </modules>
   </component>
 </project>

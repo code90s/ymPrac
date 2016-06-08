@@ -11,6 +11,9 @@
     <modules>
         <module>reflect</module>
         <module>effective</module>
+        <module>ymPracService</module>
+        <module>ymPracBiz</module>
+        <module>ymPracController</module>
     </modules>
 
     <dependencies>

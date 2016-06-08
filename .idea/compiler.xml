@@ -24,12 +24,18 @@
         <processorPath useClasspath="true" />
         <module name="effective" />
         <module name="reflect" />
+        <module name="ymPracBiz" />
+        <module name="ymPracController" />
+        <module name="ymPracService" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="effective" target="1.5" />
       <module name="reflect" target="1.5" />
       <module name="ymPrac" target="1.5" />
+      <module name="ymPracBiz" target="1.5" />
+      <module name="ymPracController" target="1.5" />
+      <module name="ymPracService" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
