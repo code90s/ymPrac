@@ -93,4 +93,5 @@ public class UUIDTest {
         System.out.println(String.valueOf(time).substring(0, 6));
     }
 
+
 }
