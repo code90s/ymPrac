@@ -9,8 +9,6 @@
       <entry name="!?*.groovy" />
       <entry name="!?*.scala" />
       <entry name="!?*.flex" />
-
-
       <entry name="!?*.kt" />
       <entry name="!?*.clj" />
       <entry name="!?*.aj" />
@@ -24,9 +22,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="common" />
-        <module name="effective" />
-        <module name="reflect" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
