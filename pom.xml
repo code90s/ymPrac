@@ -15,6 +15,7 @@
         <module>ymPracBiz</module>
         <module>ymPracController</module>
         <module>common</module>
+        <module>concurrent</module>
     </modules>
 
     <properties>
