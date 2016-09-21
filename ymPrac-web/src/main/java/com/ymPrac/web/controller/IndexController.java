@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * 测试接口
  * Created by Yan Meng on 2016/9/21.
  */
 @Controller
@@ -33,6 +34,7 @@ public class IndexController {
         //将数据存放map里面，可以直接在velocity页面，使用key访问
         model.put("data",l);
 
+        model.put("msg", "中国");
         return "/hellow";
     }
 }

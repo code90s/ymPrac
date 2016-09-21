@@ -3,3 +3,5 @@
 <h1 style="color: crimson">访问数据：$s</h1>
 
 #end
+
+<h1 style="color: crimson">$msg</h1>
