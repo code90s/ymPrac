@@ -2,13 +2,14 @@ server:
     port: 88
 
 spring:
-#  profiles : dev
+  profiles:
+    active: dev
   datasource:
     name: mydb
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://127.0.0.1:3306/test
-    username: root
-    password: root
+    url: jdbc:mysql://${db.host}:${db.port}/${db.name}?zeroDateTimeBehavior=convertToNull&useUnicode=yes&characterEncoding=UTF8
+    username: ${db.user}
+    password: ${db.pwd}
     driver-class-name: com.mysql.jdbc.Driver
     minIdle: 1
     maxActive: 100

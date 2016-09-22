@@ -2,24 +2,25 @@ server:
     port: 88
 
 spring:
-    datasource:
-        name: test
-        url: jdbc:mysql://127.0.0.1:3306/test
-        username: root
-        password: root
-        # 使用druid数据源
-        type: com.alibaba.druid.pool.DruidDataSource
-        driverClassName: com.mysql.jdbc.Driver
-        filters: stat
-        maxActive: 20
-        initialSize: 1
-        maxWait: 60000
-        minIdle: 1
-        timeBetweenEvictionRunsMillis: 60000
-        minEvictableIdleTimeMillis: 300000
-        validationQuery: select 'x'
-        testWhileIdle: true
-        testOnBorrow: false
-        testOnReturn: false
-        poolPreparedStatements: true
-        maxOpenPreparedStatements: 20
+  profiles:
+    active: dev
+  datasource:
+    name: mydb
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://${db.host}:${db.port}/${db.name}?zeroDateTimeBehavior=convertToNull&useUnicode=yes&characterEncoding=UTF8
+    username: ${db.user}
+    password: ${db.pwd}
+    driver-class-name: com.mysql.jdbc.Driver
+    minIdle: 1
+    maxActive: 100
+    initialSize: 1
+    timeBetweenEvictionRunsMillis: 3000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 'ZTM' FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+
+mybatis:
+  mapperLocations: classpath*:mappers/*.xml
+  typeAliasesPackage: com.ymPrac.service.dao
