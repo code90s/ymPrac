@@ -24,12 +24,12 @@ import javax.sql.DataSource;
  */
 @Configuration
 @EnableTransactionManagement
-@MapperScan("com.ymPrac")
+@MapperScan("com.ymPrac.service.dao")
 public class MyBatisConfig  {
 
     @Bean(destroyMethod = "close", initMethod = "init")
     @Primary
-    @ConfigurationProperties(prefix = "jdbc")
+    @ConfigurationProperties(prefix = "spring.datasource")
     public DataSource createDatasource() {
         return new DruidDataSource();
     }
@@ -48,7 +48,7 @@ public class MyBatisConfig  {
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
 
         sqlSessionFactoryBean.setMapperLocations(resolver
-                .getResources("classpath*:mybatis/mappers/*.xml"));
+                .getResources("classpath*:mappers/*.xml"));
         return sqlSessionFactoryBean.getObject();
     }
 }

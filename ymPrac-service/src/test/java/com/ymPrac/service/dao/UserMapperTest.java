@@ -1,21 +1,21 @@
 package com.ymPrac.service.dao;
 
-import com.ymPrac.service.App;
-
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.SpringApplicationConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import javax.annotation.Resource;
 
 /**
- * Created by Yan Meng on 2016/9/21.
+ * Created by Yan Meng on 2016/9/22.
  */
-@RunWith(SpringJUnit4ClassRunner.class) // SpringJUnit支持，由此引入Spring-Test框架支持！
-@SpringApplicationConfiguration(classes = App.class) // 指定我们SpringBoot工程的Application启动类
-public class UserMapperTest {
+public class UserMapperTest extends BaseTest {
+
+    @Resource
+    private UserMapper userMapper;
 
     @Test
-    public void hello () {
-        System.out.println("hello");
+    public void testCountAll () {
+        int count = userMapper.countAll();
+
+        System.out.println(count);
     }
 }
