@@ -21,6 +21,6 @@ spring:
     testOnBorrow: false
     testOnReturn: false
 
-mybatis:
-  mapperLocations: classpath*:mappers/*.xml
-  typeAliasesPackage: com.ymPrac.service.dao
+#mybatis:
+#  mapperLocations: classpath*:mappers/*.xml
+#  typeAliasesPackage: com.ymPrac.service.dao
