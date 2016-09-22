@@ -17,6 +17,7 @@
         <module>ymPrac-service</module>
         <module>ymPrac-biz</module>
         <module>ymPrac-mq</module>
+        <module>ymPrac-dubbo</module>
     </modules>
     <properties>
         <!--指定编码-->
@@ -75,6 +76,29 @@
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
                 <version>1.1.1</version>
+            </dependency>
+
+            <!-- dubbo依赖 -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>2.5.3</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>spring</artifactId>
+                        <groupId>org.springframework</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.zookeeper</groupId>
+                <artifactId>zookeeper</artifactId>
+                <version>3.4.6</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.sgroschupf</groupId>
+                <artifactId>zkclient</artifactId>
+                <version>0.1</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
