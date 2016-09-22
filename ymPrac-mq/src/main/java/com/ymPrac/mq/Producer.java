@@ -22,7 +22,7 @@ public class Producer implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        send("Sample message");
+//        send("Sample message");
         System.out.println("Message was sent to the Queue");
     }
 

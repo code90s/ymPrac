@@ -1,19 +1,18 @@
 package com.ymPrac.mq;
 
-import org.junit.Rule;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.rule.OutputCapture;
 
 import javax.jms.JMSException;
 
 /**
+ * 测试
  * Created by Yan Meng on 2016/9/22.
  */
 public class ActiveMQTest extends BaseTest {
 
-    @Rule
-    public OutputCapture outputCapture = new OutputCapture();
+//    @Rule
+//    public OutputCapture outputCapture = new OutputCapture();
 
     @Autowired
     private Producer producer;
