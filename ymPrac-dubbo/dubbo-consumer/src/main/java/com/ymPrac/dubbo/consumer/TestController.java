@@ -1,6 +1,5 @@
 package com.ymPrac.dubbo.consumer;
 
-import com.ymPrac.dubbo.annotation.service.AnnotationProvider;
 import com.ymPrac.dubbo.provider.Servicer;
 
 import org.springframework.stereotype.Controller;
@@ -16,14 +15,14 @@ import javax.annotation.Resource;
 public class TestController {
     @Resource(name = "testService")
     private Servicer testService;
-    @Resource(name = "annotationProvider")
-    private AnnotationProvider annotationProvider;
+//    @Resource(name = "annotationProvider")
+//    private AnnotationProvider annotationProvider;
 
     @RequestMapping("/dubbo")
     @ResponseBody
     public String home(){
 
-        return testService.sayHello() + annotationProvider.sayAnnotation();
+        return testService.sayHello();
 
     }
 }

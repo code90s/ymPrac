@@ -8,7 +8,6 @@ public class Test {
     /**
      * 获取名称
      */
-    @org.junit.Test
     public void testReflectName () {
         Demo demo = new Demo();
 
@@ -18,7 +17,6 @@ public class Test {
     /**
      * 实例化Class类对象
      */
-    @org.junit.Test
     public void testReflect () throws ClassNotFoundException {
         Class<Demo> demo1 = (Class<Demo>) Class.forName("com.ymPract.reflect.main.Demo");
 
@@ -26,7 +24,6 @@ public class Test {
         System.out.println(demo1.getName());
     }
 
-    @org.junit.Test
     public void testGetClass () {
         Class<Demo> demoClass = Demo.class;
 
@@ -34,7 +31,6 @@ public class Test {
         System.out.println(aClass.getName());
     }
 
-    @org.junit.Test
     public void testNewInstance () throws ClassNotFoundException, IllegalAccessException, InstantiationException {
         Class<?> demo = Class.forName("com.ymPract.reflect.main.Demo");
 
@@ -45,7 +41,6 @@ public class Test {
         System.out.println(((Demo) o).getName());
     }
 
-    @org.junit.Test
     public void testClassLoader() {
         System.out.println(Demo.class.getClassLoader().getClass().getName());
     }

@@ -1,4 +1,4 @@
-package com.ymPrac.dubbo.annotation.conf;
+package com.ymPrac.dubbo.annotation.provider.conf;
 
 import com.alibaba.dubbo.config.ApplicationConfig;
 import com.alibaba.dubbo.config.ProtocolConfig;

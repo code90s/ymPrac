@@ -1,4 +1,4 @@
-package com.ymPrac.dubbo.annotation.service;
+package com.ymPrac.dubbo.annotation.provider.service;
 
 import org.springframework.stereotype.Service;
 

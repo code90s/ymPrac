@@ -1,4 +1,4 @@
-package com.ymPrac.dubbo.annotation.service;
+package com.ymPrac.dubbo.annotation.provider.service;
 
 /**
  * Created by Yan Meng on 2016/9/23.
