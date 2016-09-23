@@ -14,7 +14,7 @@
     <modules>
         <module>dubbo-provider</module>
         <module>dubbo-consumer</module>
-        <module>dubbo-annotation</module>
+        <module>dubbo-annotation-provider</module>
         <module>dubbo-annotation-consumer</module>
     </modules>
 
