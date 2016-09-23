@@ -23,8 +23,8 @@ public class DubboConfiguration {
     @Value("${dubbo.application.name}")
     private String applicationName;
 
-    @Value("${spring.redis.host}")
-    private String logger;
+//    @Value("${spring.redis.host}")
+//    private String logger;
 
     @Value("${dubbo.registr.protocol}")
     private String protocol;
@@ -109,75 +109,4 @@ public class DubboConfiguration {
         return providerConfig;
     }
 
-    public String getApplicationName() {
-        return applicationName;
-    }
-
-    public void setApplicationName(String applicationName) {
-        this.applicationName = applicationName;
-    }
-
-    public String getLogger() {
-        return logger;
-    }
-
-    public void setLogger(String logger) {
-        this.logger = logger;
-    }
-
-    public String getProtocol() {
-        return protocol;
-    }
-
-    public void setProtocol(String protocol) {
-        this.protocol = protocol;
-    }
-
-    public String getRegistryAddress() {
-        return registryAddress;
-    }
-
-    public void setRegistryAddress(String registryAddress) {
-        this.registryAddress = registryAddress;
-    }
-
-    public String getProtocolName() {
-        return protocolName;
-    }
-
-    public void setProtocolName(String protocolName) {
-        this.protocolName = protocolName;
-    }
-
-    public int getProtocolPort() {
-        return protocolPort;
-    }
-
-    public void setProtocolPort(int protocolPort) {
-        this.protocolPort = protocolPort;
-    }
-
-    public int getTimeout() {
-        return timeout;
-    }
-
-    public void setTimeout(int timeout) {
-        this.timeout = timeout;
-    }
-
-    public int getRetries() {
-        return retries;
-    }
-
-    public void setRetries(int retries) {
-        this.retries = retries;
-    }
-
-    public int getDelay() {
-        return delay;
-    }
-
-    public void setDelay(int delay) {
-        this.delay = delay;
-    }
 }
