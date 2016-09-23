@@ -2,6 +2,7 @@ package com.ymPrac.dubbo.provider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ImportResource;
 
 /**
  * 启动类
@@ -11,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //@EnableAutoConfiguration    //启用自动配置
 //@ComponentScan  //组件扫描
 @SpringBootApplication // same as @Configuration @EnableAutoConfiguration @ComponentScan
+@ImportResource("classpath:dubbo-provider.xml")//很重要
 public class App {
 
     //启动Spring Boot项目的唯一入口

@@ -1,20 +1,20 @@
 package com.ymPrac.dubbo.consumer.conf;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
-
 import com.alibaba.dubbo.config.ApplicationConfig;
 import com.alibaba.dubbo.config.ProtocolConfig;
 import com.alibaba.dubbo.config.ProviderConfig;
 import com.alibaba.dubbo.config.RegistryConfig;
 import com.alibaba.dubbo.config.spring.AnnotationBean;
 import com.alibaba.dubbo.rpc.Exporter;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+
 /**
- * dubbo 配置类
- * Created by Yan Meng on 2016/9/22.
+ * dubbo 配置类 Created by Yan Meng on 2016/9/22.
  */
 @Configuration
 @ConditionalOnClass(Exporter.class)
@@ -49,8 +49,6 @@ public class DubboConfiguration {
 
     /**
      * 设置dubbo扫描包
-     * @param packageName
-     * @return
      */
     @Bean
     public static AnnotationBean annotationBean(@Value("${dubbo.annotation.package}") String packageName) {
@@ -61,8 +59,6 @@ public class DubboConfiguration {
 
     /**
      * 注入dubbo上下文
-     *
-     * @return
      */
     @Bean
     public ApplicationConfig applicationConfig() {
@@ -74,8 +70,6 @@ public class DubboConfiguration {
 
     /**
      * 注入dubbo注册中心配置,基于zookeeper
-     *
-     * @return
      */
     @Bean
     public RegistryConfig registryConfig() {
@@ -88,8 +82,6 @@ public class DubboConfiguration {
 
     /**
      * 默认基于dubbo协议提供服务
-     *
-     * @return
      */
     @Bean
     public ProtocolConfig protocolConfig() {
@@ -104,13 +96,8 @@ public class DubboConfiguration {
 
     /**
      * dubbo服务提供
-     *
-     * @param applicationConfig
-     * @param registryConfig
-     * @param protocolConfig
-     * @return
      */
-    @Bean(name="defaultProvider")
+    @Bean(name = "defaultProvider")
     public ProviderConfig providerConfig(ApplicationConfig applicationConfig, RegistryConfig registryConfig, ProtocolConfig protocolConfig) {
         ProviderConfig providerConfig = new ProviderConfig();
         providerConfig.setTimeout(timeout);
