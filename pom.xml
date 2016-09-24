@@ -18,6 +18,7 @@
         <module>ymPrac-biz</module>
         <module>ymPrac-mq</module>
         <module>ymPrac-dubbo</module>
+        <module>ymPrac-netty</module>
     </modules>
     <properties>
         <!--指定编码-->
