@@ -14,7 +14,7 @@ import javax.annotation.Resource;
 @Controller
 public class TestConsumerController {
 
-    @Resource(name = "annotationProvider")
+    @Resource
     private AnnotationProvider annotationProvider;
 
     @RequestMapping("/test")
