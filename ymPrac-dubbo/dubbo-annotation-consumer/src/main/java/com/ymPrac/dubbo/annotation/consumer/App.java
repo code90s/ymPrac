@@ -1,7 +1,8 @@
-package com.ymPrac.dubbo.annotation.provider;
+package com.ymPrac.dubbo.annotation.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * 启动类
@@ -11,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //@EnableAutoConfiguration    //启用自动配置
 //@ComponentScan  //组件扫描
 @SpringBootApplication // same as @Configuration @EnableAutoConfiguration @ComponentScan
+@ComponentScan(value = "com.ymPrac.dubbo.annotation.consumer")
 public class App {
 
     //启动Spring Boot项目的唯一入口

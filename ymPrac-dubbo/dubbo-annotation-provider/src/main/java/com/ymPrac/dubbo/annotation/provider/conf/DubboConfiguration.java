@@ -22,28 +22,20 @@ import org.springframework.context.annotation.PropertySource;
 public class DubboConfiguration {
     @Value("${dubbo.application.name}")
     private String applicationName;
-
-//    @Value("${spring.redis.host}")
+    //    @Value("${spring.redis.host}")
 //    private String logger;
-
     @Value("${dubbo.registr.protocol}")
     private String protocol;
-
     @Value("${dubbo.registry.address}")
     private String registryAddress;
-
     @Value("${dubbo.protocol.name}")
     private String protocolName;
-
     @Value("${dubbo.protocol.port}")
     private int protocolPort;
-
     @Value("${dubbo.provider.timeout}")
     private int timeout;
-
     @Value("${dubbo.provider.retries}")
     private int retries;
-
     @Value("${dubbo.provider.delay}")
     private int delay;
 
