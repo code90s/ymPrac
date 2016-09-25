@@ -1,4 +1,4 @@
-package com.ymPrac.dubbo.annotation.provider.conf;//package com.ymPrac.dubbo.annotation.provider.conf;
+package com.ymPrac.dubbo.annotation.consumer.conf.not_use;
 //
 //import javax.annotation.Resource;
 //

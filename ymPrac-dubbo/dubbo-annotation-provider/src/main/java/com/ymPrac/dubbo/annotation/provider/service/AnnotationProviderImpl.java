@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 public class AnnotationProviderImpl implements AnnotationProvider {
     @Override
     public String sayAnnotation() {
+        System.out.println("===============================================");
         return "hello annotation dubbo service";
     }
 }
