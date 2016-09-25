@@ -1,13 +1,9 @@
 package com.ymPrac.dubbo.annotation.consumer.conf;
 
 import com.alibaba.dubbo.config.ApplicationConfig;
-import com.alibaba.dubbo.config.MethodConfig;
 import com.alibaba.dubbo.config.ReferenceConfig;
 import com.alibaba.dubbo.config.RegistryConfig;
 import com.ymPrac.dubbo.annotation.provider.service.AnnotationProvider;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Yan Meng on 2016/9/25.
@@ -21,10 +17,13 @@ public class DubboConsumer {
     private static void initDubboConsumer() {
         // 当前应用配置
         ApplicationConfig application = new ApplicationConfig();
-        application.setName("yyy");
+        application.setName("consumer");
 
         // 连接注册中心配置
         RegistryConfig registry = new RegistryConfig();
+        registry.setDefault(registry.isDefault());
+
+        registry.setProtocol("zookeeper");
         registry.setAddress("192.168.116.128:2181");
 //        registry.setUsername("aaa");
 //        registry.setPassword("bbb");
@@ -39,16 +38,17 @@ public class DubboConsumer {
         reference.setVersion("1.0.0");
 
         // 方法级配置
-        List<MethodConfig> methods = new ArrayList<MethodConfig>();
-        MethodConfig method = new MethodConfig();
-        method.setName("sayAnnotation");
-        method.setTimeout(30000);
-        method.setRetries(0);
-        methods.add(method);
-        reference.setMethods(methods); // 设置方法级配置
+//        List<MethodConfig> methods = new ArrayList<MethodConfig>();
+//        MethodConfig method = new MethodConfig();
+//        method.setName("sayAnnotation");
+//        method.setTimeout(30000);
+//        method.setRetries(0);
+//        methods.add(method);
+//        reference.setMethods(methods); // 设置方法级配置
 
         // 和本地bean一样使用xxxService
         AnnotationProvider annotationProvider = reference.get(); // 注意：此代理对象内部封装了所有通讯细节，对象较重，请缓存复用
-        annotationProvider.sayAnnotation();
+        String result = annotationProvider.sayAnnotation();
+        System.out.println(result);
     }
 }

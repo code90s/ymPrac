@@ -10,10 +10,10 @@ import com.alibaba.dubbo.config.ServiceConfig;
  */
 public class DubboProvider {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main (String[] args) throws InterruptedException {
         initSService();
 
-        Thread.sleep(10000000);
+        Thread.sleep(10000000000000L);
     }
 
     private static void initSService() {
@@ -22,13 +22,14 @@ public class DubboProvider {
 
         // 当前应用配置
         ApplicationConfig application = new ApplicationConfig();
-        application.setName("xxx");
+        application.setName("ann-provider");
 
         // 连接注册中心配置
         RegistryConfig registry = new RegistryConfig();
+        registry.setProtocol("zookeeper");
         registry.setAddress("192.168.116.128:2181");
-//        registry.setUsername("aaa");
-//        registry.setPassword("bbb");
+        registry.setUsername("aaa");
+        registry.setPassword("bbb");
 
         // 服务提供者协议配置
         ProtocolConfig protocol = new ProtocolConfig();
@@ -46,6 +47,7 @@ public class DubboProvider {
         service.setInterface(AnnotationProvider.class);
         service.setRef(annotationProvider);
         service.setVersion("1.0.0");
+        service.setTimeout(1200000);
 
         // 暴露及注册服务
         service.export();
