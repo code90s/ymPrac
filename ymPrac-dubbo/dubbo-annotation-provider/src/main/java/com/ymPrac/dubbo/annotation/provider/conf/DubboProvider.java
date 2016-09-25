@@ -1,9 +1,11 @@
-package com.ymPrac.dubbo.annotation.provider.service;
+package com.ymPrac.dubbo.annotation.provider.conf;
 
 import com.alibaba.dubbo.config.ProtocolConfig;
 import com.alibaba.dubbo.config.ApplicationConfig;
 import com.alibaba.dubbo.config.RegistryConfig;
 import com.alibaba.dubbo.config.ServiceConfig;
+import com.ymPrac.dubbo.annotation.provider.service.AnnotationProvider;
+import com.ymPrac.dubbo.annotation.provider.service.AnnotationProviderImpl;
 
 /**
  * Created by Yan Meng on 2016/9/25.
