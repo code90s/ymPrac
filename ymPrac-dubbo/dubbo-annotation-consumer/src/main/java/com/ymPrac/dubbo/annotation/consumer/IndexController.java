@@ -13,8 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class IndexController {
 
-//    @Reference(version = "1.0.0", interfaceClass = AnnotationProvider.class, interfaceName = "annotationProvider", consumer = "defaultConsumer")
-    @Reference
+    @Reference(version = "1.0.0")
     private AnnotationProvider annotationProvider;
 
     @RequestMapping("/index")
@@ -29,4 +28,5 @@ public class IndexController {
 
         return annotationProvider.sayAnnotation();
     }
+
 }

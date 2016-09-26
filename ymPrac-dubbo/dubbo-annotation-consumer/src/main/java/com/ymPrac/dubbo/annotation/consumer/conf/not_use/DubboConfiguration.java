@@ -81,19 +81,19 @@ public class DubboConfiguration {
         return registry;
     }
 
-
-    /**
-     * dubbo服务提供
-     */
-    @Bean(name = "defaultConsumer")
-    public ConsumerConfig providerConfig(ApplicationConfig applicationConfig, RegistryConfig registryConfig) {
-        ConsumerConfig consumerConfig = new ConsumerConfig();
-        consumerConfig.setTimeout(timeout);
-        consumerConfig.setRetries(retries);
-        consumerConfig.setApplication(applicationConfig);
-        consumerConfig.setRegistry(registryConfig);
-
-        return consumerConfig;
-    }
+//
+//    /**
+//     * dubbo服务提供
+//     */
+//    @Bean(name = "defaultConsumer")
+//    public ConsumerConfig providerConfig(ApplicationConfig applicationConfig, RegistryConfig registryConfig) {
+//        ConsumerConfig consumerConfig = new ConsumerConfig();
+//        consumerConfig.setTimeout(timeout);
+//        consumerConfig.setRetries(retries);
+//        consumerConfig.setApplication(applicationConfig);
+//        consumerConfig.setRegistry(registryConfig);
+//
+//        return consumerConfig;
+//    }
 
 }
