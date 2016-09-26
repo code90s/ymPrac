@@ -84,6 +84,7 @@ public class DubboConfiguration {
 //
 //    /**
 //     * dubbo服务提供
+//     * do not need!
 //     */
 //    @Bean(name = "defaultConsumer")
 //    public ConsumerConfig providerConfig(ApplicationConfig applicationConfig, RegistryConfig registryConfig) {
