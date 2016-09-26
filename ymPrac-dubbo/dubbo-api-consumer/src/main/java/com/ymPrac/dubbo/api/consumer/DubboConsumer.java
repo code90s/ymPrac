@@ -1,9 +1,9 @@
-package com.ymPrac.dubbo.annotation.consumer.conf;
+package com.ymPrac.dubbo.api.consumer;
 
 import com.alibaba.dubbo.config.ApplicationConfig;
 import com.alibaba.dubbo.config.ReferenceConfig;
 import com.alibaba.dubbo.config.RegistryConfig;
-import com.ymPrac.dubbo.annotation.provider.service.AnnotationProvider;
+import com.ymPrac.dubbo.api.provider.service.AnnotationProvider;
 
 /**
  * dubbo 服务消费者
