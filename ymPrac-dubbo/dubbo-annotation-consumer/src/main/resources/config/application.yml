@@ -20,12 +20,7 @@ spring:
     testWhileIdle: true
     testOnBorrow: false
     testOnReturn: false
-  activemq:
-    broker-url: tcp://127.0.0.1:61616
-    user: admin
-    password: admin
-    in-memory: true
-    pooled: false
+
 
 #mybatis:
 #  mapperLocations: classpath*:mappers/*.xml

@@ -6,7 +6,7 @@ import com.alibaba.dubbo.config.annotation.Service;
 /**
  * Created by Yan Meng on 2016/9/23.
  */
-@Service(version = "annotationProvider")
+@Service(version = "1.0.0")
 public class AnnotationProviderImpl implements AnnotationProvider {
     @Override
     public String sayAnnotation() {
