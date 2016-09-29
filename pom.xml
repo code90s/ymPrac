@@ -19,7 +19,6 @@
         <module>ymPrac-mq</module>
         <module>ymPrac-dubbo</module>
         <module>ymPrac-netty</module>
-        <module>ymPrac-drools</module>
     </modules>
     <properties>
         <!--指定编码-->
