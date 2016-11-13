@@ -18,7 +18,7 @@ import java.util.Map;
 @EnableKafka
 public class KafkaConsumerConfig {
 
-    private String brokerAddress = "";
+    private String brokerAddress = "102.168.8.8:2181";
 
     @Bean
     KafkaListenerContainerFactory<ConcurrentMessageListenerContainer<String, String>> kafkaListenerContainerFactory() {

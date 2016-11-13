@@ -15,8 +15,7 @@ import java.util.Map;
 @Configuration
 @EnableKafka
 public class KafkaProducerConfig {
-
-    private String brokerAddress = "";
+    private String brokerAddress = "102.168.8.8:2181";
 
     @Bean
     public ProducerFactory<String, String> producerFactory() {
@@ -38,6 +37,6 @@ public class KafkaProducerConfig {
 
     @Bean
     public KafkaTemplate<String, String> kafkaTemplate() {
-        return new KafkaTemplate<String, String>(producerFactory());
+        return new KafkaTemplate<>(producerFactory());
     }
 }
