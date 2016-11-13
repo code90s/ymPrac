@@ -22,6 +22,7 @@
         <module>ymPrac-drools</module>
         <module>ymPrac-mina</module>
         <module>ymPrac-mq-kafka</module>
+        <module>ymPrac-jvm</module>
     </modules>
     <properties>
         <!--指定编码-->
