@@ -23,6 +23,7 @@
         <module>ymPrac-mina</module>
         <module>ymPrac-mq-kafka</module>
         <module>ymPrac-jvm</module>
+        <module>ymPrac-DesignPatterns</module>
     </modules>
     <properties>
         <!--指定编码-->
