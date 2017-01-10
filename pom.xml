@@ -24,6 +24,7 @@
         <module>ymPrac-mq-kafka</module>
         <module>ymPrac-jvm</module>
         <module>ymPrac-DesignPatterns</module>
+        <module>ymPrac-stateMachant</module>
     </modules>
     <properties>
         <!--指定编码-->
