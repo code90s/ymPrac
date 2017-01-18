@@ -12,8 +12,7 @@
     <artifactId>ymPrac-drools</artifactId>
 
     <properties>
-        <!--指定编码-->
-        <drools.version>5.1.1</drools.version>
+        <drools.version>5.2.1.Final</drools.version>
         <!--<drools.version>6.0.1.Final</drools.version>-->
     </properties>
 
@@ -43,6 +42,11 @@
             <groupId>org.drools</groupId>
             <artifactId>drools-templates</artifactId>
             <version>${drools.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.servicemix.bundles</groupId>
+            <artifactId>org.apache.servicemix.bundles.drools</artifactId>
+            <version>5.6.0.Final_1</version>
         </dependency>
     </dependencies>
 
