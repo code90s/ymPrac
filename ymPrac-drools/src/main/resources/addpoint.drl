@@ -10,7 +10,7 @@ rule birthdayPoint
 		$pointDomain : PointDomain(birthDay == true)
 	then
 		$pointDomain.setPoint($pointDomain.getPoint()+10);
-		$pointDomain.setBuyNums($pointDomain.getBuyNums()*2);
+		$pointDomain.setBuyNums($pointDomain.getBuyNum s()*2);
 		$pointDomain.setBuyMoney($pointDomain.getBuyMoney()*2);
 		$pointDomain.setBillThisMonth($pointDomain.getBillThisMonth()*2);
 

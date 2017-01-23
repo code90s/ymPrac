@@ -25,6 +25,7 @@
         <module>ymPrac-jvm</module>
         <module>ymPrac-DesignPatterns</module>
         <module>ymPrac-stateMachant</module>
+        <module>ymPrac-ASM</module>
     </modules>
     <properties>
         <!--指定编码-->
