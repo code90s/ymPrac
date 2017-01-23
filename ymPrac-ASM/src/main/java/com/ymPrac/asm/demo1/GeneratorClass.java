@@ -18,6 +18,7 @@ public class GeneratorClass {
         //通过visit方法确定类的头部信息
         cw.visit(Opcodes.V1_5, Opcodes.ACC_PUBLIC+Opcodes.ACC_ABSTRACT+Opcodes.ACC_INTERFACE,
                 "com/asm3/Comparable", null, "java/lang/Object", new String[]{"com/asm3/Mesurable"});
+
         //定义类的属性
         cw.visitField(Opcodes.ACC_PUBLIC+Opcodes.ACC_FINAL+Opcodes.ACC_STATIC,
                 "LESS", "I", null, new Integer(-1)).visitEnd();
