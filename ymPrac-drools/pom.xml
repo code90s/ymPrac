@@ -11,32 +11,42 @@
 
     <artifactId>ymPrac-drools</artifactId>
 
+    <properties>
+        <drools.version>5.2.1.Final</drools.version>
+        <!--<drools.version>6.0.1.Final</drools.version>-->
+    </properties>
+
     <dependencies>
         <!-- drools -->
-        <dependency>
-            <groupId>org.kie</groupId>
-            <artifactId>kie-api</artifactId>
-            <version>6.0.1.Final</version>
-        </dependency>
+        <!--<dependency>-->
+        <!--<groupId>org.kie</groupId>-->
+        <!--<artifactId>kie-api</artifactId>-->
+        <!--<version>${drools.version}</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.drools</groupId>
             <artifactId>drools-core</artifactId>
-            <version>6.0.1.Final</version>
+            <version>${drools.version}</version>
         </dependency>
         <dependency>
             <groupId>org.drools</groupId>
             <artifactId>drools-compiler</artifactId>
-            <version>6.0.1.Final</version>
+            <version>${drools.version}</version>
         </dependency>
         <dependency>
             <groupId>org.drools</groupId>
             <artifactId>drools-decisiontables</artifactId>
-            <version>6.0.1.Final</version>
+            <version>${drools.version}</version>
         </dependency>
         <dependency>
             <groupId>org.drools</groupId>
             <artifactId>drools-templates</artifactId>
-            <version>6.0.1.Final</version>
+            <version>${drools.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.servicemix.bundles</groupId>
+            <artifactId>org.apache.servicemix.bundles.drools</artifactId>
+            <version>5.6.0.Final_1</version>
         </dependency>
     </dependencies>
 
