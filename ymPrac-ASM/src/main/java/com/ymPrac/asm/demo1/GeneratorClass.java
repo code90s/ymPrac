@@ -1,4 +1,4 @@
-package com.ymPrac.asm;
+package com.ymPrac.asm.demo1;
 
 import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.Opcodes;
