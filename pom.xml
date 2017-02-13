@@ -30,7 +30,7 @@
     <properties>
         <!--指定编码-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>1.6</java.version>
+        <java.version>1.7</java.version>
         <mybatis.version>3.3.0</mybatis.version>
     </properties>
 
