@@ -69,6 +69,13 @@
                 <version>4.3.1</version>
             </dependency>
 
+            <!-- joda -->
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>2.9</version>
+            </dependency>
+
             <!-- db -->
             <dependency>
                 <groupId>mysql</groupId>
@@ -115,7 +122,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <!--<scope>test</scope>-->
         </dependency>
     </dependencies>
 </project>
