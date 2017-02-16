@@ -20,7 +20,9 @@ public class PreventRepeatController {
 
     @RequestMapping("/commit")
     @ResponseBody
-    public String commit () {
+    public String commit () throws InterruptedException {
+        Thread.sleep(3000L);
+
         return "commited!!!";
     }
 
