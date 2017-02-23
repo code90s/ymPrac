@@ -26,6 +26,7 @@
         <module>ymPrac-DesignPatterns</module>
         <module>ymPrac-stateMachant</module>
         <module>ymPrac-ASM</module>
+        <module>ymPrac-thrift</module>
     </modules>
     <properties>
         <!--指定编码-->
@@ -114,6 +115,13 @@
                 <groupId>com.github.sgroschupf</groupId>
                 <artifactId>zkclient</artifactId>
                 <version>0.1</version>
+            </dependency>
+
+            <!--thrift -->
+            <dependency>
+                <groupId>org.apache.thrift</groupId>
+                <artifactId>libthrift</artifactId>
+                <version>0.10.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
