@@ -16,7 +16,7 @@ public class SampleActiveMQApplication {
 
     @Bean
     public Queue queue() {
-        return new ActiveMQQueue("sample.queue");
+        return new ActiveMQQueue("TEST");
     }
 
 }

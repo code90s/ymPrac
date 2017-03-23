@@ -25,7 +25,6 @@ spring:
     user: admin
     password: admin
     in-memory: true
-    pooled: true
 
 #mybatis:
 #  mapperLocations: classpath*:mappers/*.xml
