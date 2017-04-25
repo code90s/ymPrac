@@ -2,7 +2,6 @@ package com.ymPrac.mq.kafka.consumer;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.kafka.annotation.KafkaListener;
-import java.util.Optional;
 
 public class Listener {
 
@@ -12,7 +11,6 @@ public class Listener {
      */
     @KafkaListener(topics = "linuxsogood-topic", group = "sync-group")
     public void listen(ConsumerRecord<?, ?> record) {
-        Optional<?> kafkaMessage = Optional.ofNullable(record.value());
 
     }
 
