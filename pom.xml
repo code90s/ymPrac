@@ -28,6 +28,7 @@
         <module>ymPrac-ASM</module>
         <module>ymPrac-thrift</module>
         <module>ymPrac-Grovy</module>
+        <module>ymPrac-python</module>
     </modules>
     <properties>
         <!--指定编码-->
