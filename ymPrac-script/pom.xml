@@ -13,6 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>ymPrac-script-js</module>
+        <module>ymPrac-Grovy</module>
+        <module>ymPrac-python</module>
     </modules>
 
 

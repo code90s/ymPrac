@@ -27,8 +27,6 @@
         <module>ymPrac-stateMachant</module>
         <module>ymPrac-ASM</module>
         <module>ymPrac-thrift</module>
-        <module>ymPrac-Grovy</module>
-        <module>ymPrac-python</module>
         <module>ymPrac-script</module>
     </modules>
     <properties>
