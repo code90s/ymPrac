@@ -27,10 +27,10 @@ public class ScriptEngineTest {
         simpleTest();
     }
 
-    private static void evalScript() throws Exception{
-        ScriptEngineManager factory = new ScriptEngineManager();
+    private static void evalScript() throws Exception {
+        ScriptEngineManager manager = new ScriptEngineManager();
         //每次生成一个engine实例
-        ScriptEngine engine = factory.getEngineByName("groovy");
+        ScriptEngine engine = manager.getEngineByName("groovy");
         System.out.println(engine.toString());
 
         //javax.script.Bindings
@@ -50,7 +50,8 @@ public class ScriptEngineTest {
     /**
      * 3) 实际案例，Java调用groovy文件里面的方法，并传递参数
      */
-    private static void simpleTest() throws IOException, InstantiationException, IllegalAccessException, ResourceException, ScriptException, groovy.util.ScriptException {
+    private static void simpleTest() throws IOException, InstantiationException,
+            IllegalAccessException, ResourceException, ScriptException, groovy.util.ScriptException {
         String[] roots = new String[] { "E:\\IdeaProjects\\ymPrac\\ymPrac-Grovy\\src\\main\\resources" };
 
         //通过指定的roots来初始化GroovyScriptEngine

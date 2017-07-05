@@ -29,6 +29,7 @@
         <module>ymPrac-thrift</module>
         <module>ymPrac-Grovy</module>
         <module>ymPrac-python</module>
+        <module>ymPrac-script</module>
     </modules>
     <properties>
         <!--指定编码-->
