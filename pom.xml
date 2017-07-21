@@ -28,6 +28,7 @@
         <module>ymPrac-ASM</module>
         <module>ymPrac-thrift</module>
         <module>ymPrac-script</module>
+        <module>ymPrac-springSecurity</module>
     </modules>
     <properties>
         <!--指定编码-->

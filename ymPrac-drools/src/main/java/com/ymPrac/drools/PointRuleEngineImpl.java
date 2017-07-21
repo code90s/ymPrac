@@ -23,7 +23,7 @@ public class PointRuleEngineImpl implements PointRuleEngine {
     private RuleBase ruleBase;
 
     /* (non-Javadoc)
-     * @see com.drools.demo.PointRuleEngine#initEngine()
+     * @see conf.drools.demo.PointRuleEngine#initEngine()
      */
     public void initEngine() {
         // 设置时间格式
@@ -42,7 +42,7 @@ public class PointRuleEngineImpl implements PointRuleEngine {
     }
 
     /* (non-Javadoc)
-     * @see com.drools.demo.PointRuleEngine#refreshEnginRule()
+     * @see conf.drools.demo.PointRuleEngine#refreshEnginRule()
      */
     public void refreshEnginRule() {
         ruleBase = RuleBaseFacatory.getRuleBase();
@@ -55,7 +55,7 @@ public class PointRuleEngineImpl implements PointRuleEngine {
     }
 
     /* (non-Javadoc)
-     * @see com.drools.demo.PointRuleEngine#executeRuleEngine(com.drools.demo.PointDomain)
+     * @see conf.drools.demo.PointRuleEngine#executeRuleEngine(conf.drools.demo.PointDomain)
      */
     public void executeRuleEngine(final PointDomain pointDomain) {
         if (null == ruleBase.getPackages() || 0 == ruleBase.getPackages().length) {

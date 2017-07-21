@@ -29,5 +29,5 @@ spring:
 
 #mybatis:
 #  mapperLocations: classpath*:mappers/*.xml
-#  typeAliasesPackage: com.ymPrac.service.dao
+#  typeAliasesPackage: conf.ymPrac.service.dao
 
