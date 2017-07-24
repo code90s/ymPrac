@@ -49,7 +49,7 @@ public class MySecurityFilter extends AbstractSecurityInterceptor implements Fil
 	private AuthenticationManager myAuthenticationManager; 
 	
 	@PostConstruct
-	public void init(){
+	public void init() {
 //		System.err.println(" ---------------  MySecurityFilter init--------------- ");
 		super.setAuthenticationManager(myAuthenticationManager);
 		super.setAccessDecisionManager(accessDecisionManager);

@@ -14,6 +14,7 @@ import org.springframework.security.web.authentication.SavedRequestAwareAuthenti
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -49,6 +50,7 @@ public class MyAuthenticationFilter extends
 	 * Email: mmm333zzz520@163.conf
 	 * @date 2013-12-5 下午7:02:32
 	 */
+	@PostConstruct
 	public void init() {
 //		System.err.println(" ---------------  MyAuthenticationFilter init--------------- ");
 		this.setUsernameParameter(USERNAME);
