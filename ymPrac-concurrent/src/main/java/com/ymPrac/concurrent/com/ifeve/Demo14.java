@@ -42,6 +42,9 @@ public class Demo14 {
             }
         };
 
+        thread1.setPriority(5);
+        thread2.setPriority(1);
+
         thread1.start();
         thread2.start();
         Thread.sleep(100000000L);
