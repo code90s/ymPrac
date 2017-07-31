@@ -30,6 +30,7 @@
         <module>ymPrac-script</module>
         <module>ymPrac-springSecurity</module>
         <module>ymPrac-storm</module>
+        <module>ymPrac-grpc</module>
     </modules>
     <properties>
         <!--指定编码-->
