@@ -31,6 +31,7 @@
         <module>ymPrac-springSecurity</module>
         <module>ymPrac-storm</module>
         <module>ymPrac-grpc</module>
+        <module>ymPrac-scala</module>
     </modules>
     <properties>
         <!--指定编码-->
