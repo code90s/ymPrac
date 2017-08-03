@@ -17,7 +17,7 @@ object Function {
   val multiplier: (Int) => Int = (i: Int) => i * factor
 
   // 函数 f 和 值 v 作为参数，而函数 f 又调用了参数 v
-  def apply(f: Int => String, v: Int): String = f;(v)
+  def apply(f: Int => String, v: Int): String = f(v)
 
   def layout[A](x: A): String = "[" + x.toString + "]"
 
