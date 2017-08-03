@@ -8,12 +8,18 @@ object CollectionTest {
   def main(args: Array[String]): Unit = {
     // 定义整型 List
     val x = List(1, 2, 3, 4)
+    for (xItem <- x) {
+      println(xItem)
+    }
 
     // 定义 Set
     var y = Set(1, 3, 5, 7)
 
     // 定义 Map
     val z = Map("one" -> 1, "two" -> 2, "three" -> 3)
+    for (zItem <- z) {
+      println(zItem._1 + ": " + zItem._2)
+    }
 
     // 创建两个不同类型元素的元组
     val a = (10, "Runoob")
