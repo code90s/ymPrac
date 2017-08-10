@@ -22,7 +22,6 @@ object Function3 {
         else
           fact(i - 1, i * accumulator)
       }
-
       fact(i, 1)
     }
 
