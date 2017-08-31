@@ -107,7 +107,8 @@ public class LamdaTest {
 //    }
     // 更好的办法
     private static void filter(List<String> names, Predicate<String> condition) {
-        names.stream().filter((name) -> (condition.test(name)))
+        names.stream()
+                .filter((name) -> (condition.test(name)))
                 .forEach((name) -> System.out.println(name + " "));
     }
 
