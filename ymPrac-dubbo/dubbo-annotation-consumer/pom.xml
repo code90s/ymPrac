@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>com.ymPrac</groupId>
-            <artifactId>dubbo-annotation-provider</artifactId>
+            <artifactId>dubbo-annotation-consumer-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
