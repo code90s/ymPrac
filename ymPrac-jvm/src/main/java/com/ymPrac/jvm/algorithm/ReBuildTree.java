@@ -2,6 +2,7 @@ package com.ymPrac.jvm.algorithm;
 
 /**
  * 二叉树重建
+ * 输入的前序遍历和中序遍历的结果
  * Created by Yan Meng on 2017/8/31.
  */
 public class ReBuildTree {
