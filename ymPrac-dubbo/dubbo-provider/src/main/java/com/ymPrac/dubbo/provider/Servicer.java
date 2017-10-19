@@ -5,4 +5,5 @@ package com.ymPrac.dubbo.provider;
  */
 public interface Servicer {
     public String sayHello();
+
 }
