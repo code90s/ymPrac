@@ -32,6 +32,7 @@
         <module>ymPrac-storm</module>
         <module>ymPrac-grpc</module>
         <module>ymPrac-scala</module>
+        <module>ymPrac-storm2x</module>
     </modules>
     <properties>
         <!--指定编码-->
