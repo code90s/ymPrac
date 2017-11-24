@@ -6,11 +6,11 @@ package com.ymPrac.dubbo.annotation.provider.conf;
 //import org.springframework.context.annotation.Bean;
 //import org.springframework.context.annotation.Configuration;
 //
-//import com.alibaba.dubbo.config.ApplicationConfig;
-//import com.alibaba.dubbo.config.ProtocolConfig;
-//import com.alibaba.dubbo.config.ProviderConfig;
-//import com.alibaba.dubbo.config.RegistryConfig;
-//import com.alibaba.dubbo.rpc.Exporter;
+//import conf.alibaba.dubbo.config.ApplicationConfig;
+//import conf.alibaba.dubbo.config.ProtocolConfig;
+//import conf.alibaba.dubbo.config.ProviderConfig;
+//import conf.alibaba.dubbo.config.RegistryConfig;
+//import conf.alibaba.dubbo.rpc.Exporter;
 //
 ///**
 // * 多端口提供dubbo服务

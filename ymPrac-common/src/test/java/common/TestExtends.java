@@ -1,7 +1,10 @@
 package common;
 
+import org.assertj.core.util.Sets;
+
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * Created by Yan Meng on 2016/8/31.
@@ -18,6 +21,10 @@ public class TestExtends {
 
             System.out.println(map.size());
             System.out.println(map.get("a"));
+
+            Set<String> testSet = Sets.newHashSet();
+            testSet.add(null);
+            System.out.println(testSet.size());
 
         } catch (Exception e) {
             e.printStackTrace();

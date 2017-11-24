@@ -2,7 +2,6 @@ package com.ymPrac.mq.kafka.producer;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
-import org.apache.kafka.clients.producer.ProducerRecord;
 
 import java.util.Properties;
 import java.util.Random;
@@ -24,7 +23,7 @@ public class NativeProducer {
         Producer<Object, Object> producer = new KafkaProducer<>(props);
  
         for (int nEvents = 0; nEvents < events; nEvents++) {
-            producer.send(new ProducerRecord<>("my-topic", Integer.toString(nEvents), Integer.toString(nEvents)));
+//            producer.send(new ProducerRecord<>("my-topic", Integer.toString(nEvents), Integer.toString(nEvents)));
         }
         producer.close();
 	}

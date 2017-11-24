@@ -25,9 +25,8 @@ spring:
     user: admin
     password: admin
     in-memory: true
-    pooled: true
 
 #mybatis:
 #  mapperLocations: classpath*:mappers/*.xml
-#  typeAliasesPackage: com.ymPrac.service.dao
+#  typeAliasesPackage: conf.ymPrac.service.dao
 

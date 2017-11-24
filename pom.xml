@@ -26,18 +26,25 @@
         <module>ymPrac-DesignPatterns</module>
         <module>ymPrac-stateMachant</module>
         <module>ymPrac-ASM</module>
+        <module>ymPrac-thrift</module>
+        <module>ymPrac-script</module>
+        <module>ymPrac-springSecurity</module>
+        <module>ymPrac-storm</module>
+        <module>ymPrac-grpc</module>
+        <module>ymPrac-scala</module>
+        <module>ymPrac-storm2x</module>
     </modules>
     <properties>
         <!--指定编码-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>1.6</java.version>
+        <java.version>1.7</java.version>
         <mybatis.version>3.3.0</mybatis.version>
     </properties>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.4.0.RELEASE</version>
+        <version>1.4.2.RELEASE</version>
     </parent>
 
     <dependencyManagement>
@@ -69,6 +76,13 @@
                 <version>4.3.1</version>
             </dependency>
 
+            <!-- joda -->
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>2.9</version>
+            </dependency>
+
             <!-- db -->
             <dependency>
                 <groupId>mysql</groupId>
@@ -90,7 +104,7 @@
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>dubbo</artifactId>
-                <version>2.5.3</version>
+                <version>2.5.6</version>
                 <exclusions>
                     <exclusion>
                         <artifactId>spring</artifactId>
@@ -108,6 +122,13 @@
                 <artifactId>zkclient</artifactId>
                 <version>0.1</version>
             </dependency>
+
+            <!--thrift -->
+            <dependency>
+                <groupId>org.apache.thrift</groupId>
+                <artifactId>libthrift</artifactId>
+                <version>0.10.0</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -115,7 +136,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <!--<scope>test</scope>-->
         </dependency>
     </dependencies>
 </project>

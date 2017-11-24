@@ -24,7 +24,7 @@ import javax.sql.DataSource;
  */
 @Configuration
 @EnableTransactionManagement
-@MapperScan("com.ymPrac.service.dao")
+@MapperScan("conf.ymPrac.service.dao")
 public class MyBatisConfig  {
 
     @Bean(destroyMethod = "close", initMethod = "init")

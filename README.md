@@ -17,3 +17,8 @@
 * ymPrac-netty & ymPrac-mina  netty &  mina 的基础API；
 *  ymPrac-reflect & ymPrac-concurrent 反射、并发等jdk 基础；
 * ymPrac-effective 《effective java》随书源码；
+* ymPrac-script java嵌入动态语言（python，grovy等），可以用来作为规则引擎的基础；
+* ymPrac-storm storm 示例，兼容 jstorm， heron
+
+codeReview:
+ninja https://app.review.ninja/

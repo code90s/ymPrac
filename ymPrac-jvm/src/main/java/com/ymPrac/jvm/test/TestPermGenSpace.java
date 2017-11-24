@@ -20,4 +20,19 @@ public class TestPermGenSpace {
             System.out.println(e);
         }
     }
+
+    public void testByteArray () {
+        byte[] a = new byte[10];
+
+        byte[][] arrays = new byte[10][];
+        arrays[0] = a;
+
+        test(arrays);
+    }
+
+    public void test (byte[]... args) {
+
+    }
+
+
 }
