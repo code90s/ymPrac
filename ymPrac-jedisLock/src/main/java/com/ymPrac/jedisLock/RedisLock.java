@@ -190,7 +190,7 @@ public class RedisLock {
         }
     }
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         RedisTemplate redisTemplate = new RedisTemplate();
         String key = "product_11";
         RedisLock lock = new RedisLock(redisTemplate, key, 10000, 20000);
@@ -198,6 +198,8 @@ public class RedisLock {
             if (lock.lock()) {
                 //需要加锁的代码
             }
+
+            // 获取不到lock可以采用快速失败 或者重试（间隔随机时间）
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
