@@ -34,6 +34,10 @@
         </dependency>
     </dependencies>
 
+
+    <!--
+        mvn mybatis-generator:generate
+    -->
     <build>
         <finalName>web-ssm</finalName>
         <plugins>
