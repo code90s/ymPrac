@@ -5,7 +5,7 @@ import com.sun.btrace.Profiler;
 import com.sun.btrace.annotations.*;
 
 /**
- * @script btrace ,pid. com.ymPrac.btrace.Profiling
+ * @script btrace <pid> E:\IdeaProjects\ymPrac\ymPrac-BTrace\src\main\java\com\ymPrac\btrace\Profiling.java
  * Created by Yan Meng on 2017/12/13.
  */
 @BTrace

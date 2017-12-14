@@ -6,7 +6,7 @@ import static com.sun.btrace.BTraceUtils.*;
 
 /**
  *
- * @script btrace ,pid. com.ymPrac.btrace.TracingScript
+ * @script btrace <pid> E:\IdeaProjects\ymPrac\ymPrac-BTrace\src\main\java\com\ymPrac\btrace\TracingScript.java
  * BTrace Script Template
  * Created by Yan Meng on 2017/12/13.
  */

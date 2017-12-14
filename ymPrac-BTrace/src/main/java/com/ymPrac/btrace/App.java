@@ -39,7 +39,7 @@ public class App {
         BtraceTest bt = new BtraceTest();
         while (true) {
             for (int i : a) {
-                bt.getret(i);
+                System.out.println(bt.getret(i));;
                 Thread.sleep(100);
             }
 
