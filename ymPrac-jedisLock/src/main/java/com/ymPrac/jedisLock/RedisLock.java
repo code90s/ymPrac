@@ -9,6 +9,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 /**
+ * https://www.cnblogs.com/0201zcr/p/5942748.html
  * Redis distributed lock implementation.
  */
 public class RedisLock {

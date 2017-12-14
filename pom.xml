@@ -34,6 +34,7 @@
         <module>ymPrac-scala</module>
         <module>ymPrac-storm2x</module>
         <module>ymPrac-jedisLock</module>
+        <module>ymPrac-BTrace</module>
     </modules>
     <properties>
         <!--指定编码-->
