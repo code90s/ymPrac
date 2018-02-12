@@ -6,10 +6,31 @@ package com.ymPrac.jvm;
 public class HashTest {
 
     public static void main(String[] args) {
-        String str = "BJCP88358257";
+        String origin = "0123456789";
 
-        int i = str.hashCode();
-        System.out.println(i);
+        int sum = 0;
+        for (int i=1; i<=100; i++) {
+            String str = origin + i;
+
+            String result = String.valueOf(FNVHash1(str));
+//            System.out.println(result);
+            int length = result.length();
+            String substring = result.substring(length - 2, length);
+            Integer integer = Integer.valueOf(substring);
+            if (integer >= 50) {
+                sum++;
+            }
+//            System.out.println(integer);
+        }
+//        System.out.println(sum);
+        System.out.println(Math.abs(-112266017 - (-112266017) / 100 * 100));
+    }
+
+    public void prepareData() {
+
+//        int i1 = Calendar.getInstance().get(GregorianCalendar.DAY_OF_YEAR);
+//        Calendar.getInstance();
+//        System.out.println(i1);
     }
 
     /**
