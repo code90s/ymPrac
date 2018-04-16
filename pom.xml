@@ -33,6 +33,8 @@
         <module>ymPrac-grpc</module>
         <module>ymPrac-scala</module>
         <module>ymPrac-storm2x</module>
+        <module>ymPrac-jedisLock</module>
+        <module>ymPrac-BTrace</module>
     </modules>
     <properties>
         <!--指定编码-->
@@ -44,7 +46,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.4.2.RELEASE</version>
+        <version>1.5.2.RELEASE</version>
     </parent>
 
     <dependencyManagement>

@@ -26,7 +26,7 @@ object ObjectTes {
   }
 
   def main(args: Array[String]) {
-    Object
+
     println(markers("red"))
     // 单例函数调用，省略了.(点)符号
     println(ObjectTes getMarker "blue")

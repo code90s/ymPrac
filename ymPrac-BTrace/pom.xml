@@ -9,14 +9,17 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ymPrac-stateMachant</artifactId>
-    <packaging>pom</packaging>
-    <description>state machine some demo</description>
+    <artifactId>ymPrac-BTrace</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
-    <modules>
-        <module>spring-statemachine</module>
-        <module>simple-statemachine</module>
-        <module>spring-Statemachine-jpa</module>
-    </modules>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.sun.tools.btrace/btrace-boot -->
+        <dependency>
+            <groupId>com.sun.tools.btrace</groupId>
+            <artifactId>btrace-boot</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+
+    </dependencies>
 
 </project>

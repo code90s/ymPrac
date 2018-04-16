@@ -9,14 +9,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ymPrac-stateMachant</artifactId>
-    <packaging>pom</packaging>
-    <description>state machine some demo</description>
+    <artifactId>ymPrac-jedisLock</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
-    <modules>
-        <module>spring-statemachine</module>
-        <module>simple-statemachine</module>
-        <module>spring-Statemachine-jpa</module>
-    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
